@@ -1,0 +1,54 @@
+@import "../css/normalize_style.css";
+body {
+  font-family: Arial, sans-serif;
+}
+
+.records-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.records-controller__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+.record__input {
+  height: 100%;
+  width: 200px;
+  border: 1px solid grey;
+}
+.record__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-size: 96%;
+  background-repeat: no-repeat;
+}
+.record__btn_cross {
+  background-image: url("/img/icons/cross.svg");
+}
+.record__btn_arrow-top {
+  background-image: url("/img/icons/arrow-top.svg");
+}
+.record__btn_arrow-bottom {
+  background-image: url("/img/icons/arrow-bottom.svg");
+}
+
+.btn {
+  border: 1px solid grey;
+  padding: 3px;
+}
+.btn:active {
+  border-color: #3193ff;
+}
+
+/*# sourceMappingURL=style.css.map */

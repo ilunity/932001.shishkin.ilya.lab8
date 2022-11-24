@@ -1,0 +1,64 @@
+@import "../css/normalize_style.css";
+
+body {
+  font-family: Arial, sans-serif;
+  //font-size: 18px;
+  //font-weight: 400;
+  //line-height: 21px;
+}
+
+$record_height: 24px;
+
+.records-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  height: $record_height;
+
+  &__input {
+    height: 100%;
+    width: 200px;
+    border: 1px solid grey;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: $record_height;
+    height: $record_height;
+
+    background-position: center center;
+    background-size: 96%;
+    background-repeat: no-repeat;
+
+    &_cross {
+      background-image: url("/img/icons/cross.svg") ;
+    }
+    &_arrow-top {
+      background-image: url("/img/icons/arrow-top.svg") ;
+    }
+    &_arrow-bottom {
+      background-image: url("/img/icons/arrow-bottom.svg") ;
+    }
+  }
+}
+
+.btn {
+  border: 1px solid grey;
+  padding: 3px;
+  &:active {
+    border-color: #3193ff;
+  }
+}
